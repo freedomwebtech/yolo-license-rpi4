@@ -1,0 +1,2 @@
+crop1 = imc[int(xyxy[1]):int(xyxy[3]), int(xyxy[0]):int(xyxy[2])]
+text = pytesseract.image_to_string(crop1, config='-l eng --psm 9 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')    
